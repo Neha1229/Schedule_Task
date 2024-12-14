@@ -1,0 +1,12 @@
+name: "Scheduled Job"
+on:
+    schedule:
+        - cron: "0 17 * * 6"
+jobs:
+    scheduled-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Scheduled task on Saturday at 5 pm"
+              run: echo "Scheduled task on Saturday at 5 pm"
+
+
